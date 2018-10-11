@@ -1,0 +1,150 @@
+Training: 
+with energy coeff: python train.py --n_comp=256 --timit_hdf='./features/mfcc/' --save_to='./models/'
+without energy coeff: python train.py --n_comp=32 --timit_hdf='./features/mfcc/' --save_to='./models/without_energy_coeff/' --without_energy_coeff=1
+
+Testing : python test.py --timit_hdf='./features/mfcc/' --load_from='./models/n_comp256.pkl'
+
+Namespace(load_from='./models/mfcc_delta_delta/n_comp64.pkl', timit_hdf='./features/mfcc_delta_delta/')
+TIMIT.HDF path is:  ./features/mfcc_delta_delta/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 22.8
+Test accuracy: 19.1
+
+Namespace(load_from='./models/mfcc_delta_delta/n_comp32.pkl', timit_hdf='./features/mfcc_delta_delta/', without_energy_coeff='0')
+TIMIT.HDF path is:  ./features/mfcc_delta_delta/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 39)
+test_feature shape:(451660, 39)
+Train accuracy: 20.8
+Test accuracy: 18.9
+--
+Namespace(load_from='./models/mfcc_delta/n_comp64.pkl', timit_hdf='./features/mfcc_delta/')
+TIMIT.HDF path is:  ./features/mfcc_delta/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 22.8
+Test accuracy: 19.0
+
+Namespace(load_from='./models/mfcc_delta/n_comp32.pkl', timit_hdf='./features/mfcc_delta/', without_energy_coeff='0')
+TIMIT.HDF path is:  ./features/mfcc_delta/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 26)
+test_feature shape:(451660, 26)
+Train accuracy: 20.8
+Test accuracy: 18.8
+-------------------------------------------------------------------------------------------------
+
+Namespace(load_from='./models/n_comp2.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 13.2
+Test accuracy: 13.0
+
+Namespace(load_from='./models/n_comp4.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 14.6
+Test accuracy: 14.3
+
+Namespace(load_from='./models/n_comp8.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 15.1
+Test accuracy: 14.6
+
+Namespace(load_from='./models/n_comp16.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 15.6
+Test accuracy: 14.6
+
+Namespace(load_from='./models/n_comp32.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 16.9
+Test accuracy: 14.9
+
+Namespace(load_from='./models/n_comp64.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 18.0
+Test accuracy: 14.3
+
+Namespace(load_from='./models/n_comp128.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 20.6
+Test accuracy: 13.9
+
+Namespace(load_from='./models/n_comp256.pkl', timit_hdf='./features/mfcc/')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 25.1
+Test accuracy: 13.4
+
+-------------------------------------------------------------------------------------------------
+
+Namespace(load_from='./models/without_energy_coeff/mfcc/n_comp32.pkl', timit_hdf='./features/mfcc/', without_energy_coeff='1')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+Train accuracy: 15.7
+Test accuracy: 13.8
+
+Namespace(load_from='./models/without_energy_coeff/mfcc/n_comp64.pkl', timit_hdf='./features/mfcc/', without_energy_coeff='1')
+TIMIT.HDF path is:  ./features/mfcc/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 12)
+test_feature shape:(451660, 12)
+Train accuracy: 16.6
+Test accuracy: 13.3
+--
+
+Namespace(load_from='./models/without_energy_coeff/mfcc_delta/n_comp32.pkl', timit_hdf='./features/mfcc_delta/', without_energy_coeff='1')
+TIMIT.HDF path is:  ./features/mfcc_delta/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 25)
+test_feature shape:(451660, 25)
+Train accuracy: 20.0
+Test accuracy: 18.0
+
+Namespace(load_from='./models/without_energy_coeff/mfcc_delta/n_comp64.pkl', timit_hdf='./features/mfcc_delta/', without_energy_coeff='1')
+TIMIT.HDF path is:  ./features/mfcc_delta/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 25)
+test_feature shape:(451660, 25)
+Train accuracy: 21.9
+Test accuracy: 18.1
+--
+
+Namespace(load_from='./models/without_energy_coeff/mfcc_delta_delta/n_comp32.pkl', timit_hdf='./features/mfcc_delta_delta/', without_energy_coeff='1')
+TIMIT.HDF path is:  ./features/mfcc_delta_delta/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 38)
+test_feature shape:(451660, 38)
+Train accuracy: 20.7
+Test accuracy: 18.7
+
+Namespace(load_from='./models/without_energy_coeff/mfcc_delta_delta/n_comp64.pkl', timit_hdf='./features/mfcc_delta_delta/', without_energy_coeff='1')
+TIMIT.HDF path is:  ./features/mfcc_delta_delta/
+(1236543, 2)
+(451660, 2)
+feature shape:(1236543, 38)
+test_feature shape:(451660, 38)
+Train accuracy: 22.7
+Test accuracy: 19.0
