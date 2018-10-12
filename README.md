@@ -10,9 +10,9 @@ If you have already converted the files, set ```--preprocessed=True``` to skip t
 
 ## Model Training
 - with energy coeff: 
-    python train.py --n_comp=256 --timit_hdf='./features/mfcc/' --save_to='./models/'
+    ```python train.py --n_comp=256 --timit_hdf='./features/mfcc/' --save_to='./models/'```
 - without energy coeff: 
-    python train.py --n_comp=32 --timit_hdf='./features/mfcc/' --save_to='./models/without_energy_coeff/' --without_energy_coeff=1
+    ```python train.py --n_comp=32 --timit_hdf='./features/mfcc/' --save_to='./models/without_energy_coeff/' --without_energy_coeff=1```
 
 - Arguments passed are:
     - n_comp: number of components in each GMM. Default is 2.
