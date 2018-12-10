@@ -1,11 +1,12 @@
 # ASR_2018_T01
 ## Data pre processing
+Put TIMIT dataset in the folder named TIMIT. 
 Run ```python import_timit.py --timit=./TIMIT --preprocessed=False```
 to compute the features and store them in a folder.
 This script also converts the [NIST "SPHERE" file format](https://www.isip.piconepress.com/projects/speech/software/tutorials/production/fundamentals/v1.0/section_02/s02_01_p04.html) to [WAVE PCM format](http://soundfile.sapp.org/doc/WaveFormat/).
 If you have already converted the files, set ```--preprocessed=True``` to skip the conversion process.
 
-- we created import_timit_test.py to generate features for TIMIT tet data.
+- we created import_timit_test.py to generate features for TIMIT test data.
 - updated import_timit.py and import_timit_test.py to store hdf files in different directories, for each of mfcc, mfcc-delta, and mfcc-delta-delta.
 
 ## Model Training
@@ -43,7 +44,7 @@ If you have already converted the files, set ```--preprocessed=True``` to skip t
 - [x] Code to read files and compute MFCC features
 - [x] Computing MFCC for time slices given in .PHN files
 - [x] Dumping computed features to a folder
-- [ ] Dumping phone-wise features to a folder
+- [x] Dumping phone-wise features to a folder
 - [x] GMM training
 - [x] GMM model dumping
 - [x] GMM evaluation
