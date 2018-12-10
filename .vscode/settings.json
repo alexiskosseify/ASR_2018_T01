@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/env/bin/python"
+    "python.pythonPath": "/home/prince/anaconda3/bin/python",
+    "git.ignoreLimitWarning": true
 }
